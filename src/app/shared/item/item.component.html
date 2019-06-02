@@ -1,0 +1,9 @@
+<div class="card-deck">
+  <div class="card" style="width: 18rem;" *ngFor="let res of ressources">
+    <img class="card-img-top" src="{{res.imgLogo}}" alt="{{res.title}}">
+    <div class="card-body">
+      <h5 class="card-title">{{res.title}}</h5>
+      <p class="card-text"> {{res.description}} </p>
+    </div>
+  </div>
+</div>

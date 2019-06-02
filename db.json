@@ -1,0 +1,96 @@
+{
+  "users": [
+    {
+      "firstName": "John",
+      "lastName": "Smith",
+      "email": "j.smith@gmail.com",
+      "address": "New York",
+      "gender": "M",
+      "id": 1
+    },
+    {
+      "firstName": "Adam",
+      "lastName": "Manzano",
+      "email": "a.manzano@gmail.com",
+      "address": "Berlin",
+      "gender": "M",
+      "id": 2
+    },
+    {
+      "firstName": "Sarah",
+      "lastName": "Bauer",
+      "email": "s.bauer@hotmail.com",
+      "address": "Italy",
+      "gender": "F",
+      "id": 3
+    },
+    {
+      "firstName": "Maria",
+      "lastName": "Martinez",
+      "email": "m.maria@live.com",
+      "address": "Mexico City",
+      "gender": "F",
+      "id": 4
+    }
+  ],
+  "music": [
+    {
+      "id": "1",
+      "title": "Apple Music",
+      "description": "Create a profile so that you and your friends can see the songs and music videos you’re each checking out, and share what you’re into.",
+      "imgLogo": "http://localhost:4200/assets/images/music/apple.png"
+    },
+    {
+      "id": "2",
+      "title": "Spotify",
+      "description": "Spotify gives you instant access to millions of songs – from old favorites to the latest hits. Just hit play to stream anything you like.",
+      "imgLogo": "http://localhost:4200/assets/images/music/Spotify.png"
+    },
+    {
+      "id": "3",
+      "title": "Soundcloud",
+      "description": "SoundCloud is a music and podcast streaming platform that lets you listen to millions of songs from around the world, or upload your own. Start listening now!",
+      "imgLogo": "http://localhost:4200/assets/images/music/soundcloud.jpg"
+    }
+  ],
+  "games": [
+    {
+      "id": "1",
+      "title": "Metal Gear Solid 5",
+      "description": "In the aftermath of the events of Ground Zeroes and the destruction of Militaires Sans Frontières, Big Boss falls into a coma. Nine years later, he awakens and helps lead a new mercenary group, Diamond Dogs.",
+      "imgLogo": "http://localhost:4200/assets/images/games/metal_gear_solid.png"
+    },
+    {
+      "id": "2",
+      "title": "God of War",
+      "description": "Many years have passed since Kratos took his vengeance against the Olympian gods, and he now lives with his young son Atreus in Midgard. The game opens following the death of Kratos' second wife and Atreus' mother, Faye, whose last wish was for her ashes to be spread at the highest peak of the nine realms.",
+      "imgLogo": "http://localhost:4200/assets/images/games/god_of_war.jpg"
+    },
+    {
+      "id": "3",
+      "title": "PlayerUnknown's Battlegrounds",
+      "description": "100 murderous hopefuls skydive onto an abandoned island, grab whatever weapons and ammo they can find, and fight to the death. Rinse and repeat. Though the concept wasn't new, PUBG made the battle royale genre into the phenomenon that it is today.",
+      "imgLogo": "http://localhost:4200/assets/images/games/pubg.jpg"
+    }
+  ],
+  "electronics": [
+    {
+      "id": "1",
+      "title": "Sony Playstation 4",
+      "description": "The new slim PlayStation®4 opens the door to extraordinary journeys through immersive new gaming worlds and a deeply connected gaming community. ",
+      "imgLogo": "http://localhost:4200/assets/images/electronics/ps4.png"
+    },
+    {
+      "id": "2",
+      "title": "Microsoft XBOX ONE",
+      "description": "Xbox One is a line of eighth generation home video game consoles developed by Microsoft. Announced in May 2013, it is the successor to Xbox 360 and the third console in the Xbox family.",
+      "imgLogo": "http://localhost:4200/assets/images/electronics/Xbox_One_X.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Atari",
+      "description": "Atari is a corporate and brand name owned by several entities since its inception in 1972, currently by Atari Interactive, a subsidiary of the French publisher Atari, SA. ",
+      "imgLogo": "http://localhost:4200/assets/images/electronics/Ataribox.jpg"
+    }
+  ]
+}

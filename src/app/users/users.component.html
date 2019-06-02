@@ -1,0 +1,35 @@
+<table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Gender</th>
+      <th scope="col" colspan="3">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container>
+      <tr *ngFor="let user of ressources">
+        <td> {{user.firstName}}</td>
+        <td>{{user.lastName}}</td>
+        <td  class="text-center"><i class="fas fa-{{user.gender == 'M' ? 'male' : 'female'}}  " ></i></td>
+        <td>{{user.email}}</td>
+        <td class="text-center" style="width: 7%">
+          <button class="btn btn-primary" routerLink="/signup/{{user.id}}">Edit</button>
+        </td>
+        <td class="text-center" style="width: 7%">
+          <button class="btn btn-danger" (click)="popupConfirm(user)">Delete</button>
+        </td>
+      </tr>
+    </ng-container>
+
+    <ng-container *ngIf="!ressources || ressources.length == 0">
+      <tr>
+        <td colspan="5" class="text-center">
+          <button class="btn btn-primary" style="width:15%" routerLink="/signup">Add user</button>
+        </td>
+      </tr>
+    </ng-container>
+
+  </tbody>
+</table>

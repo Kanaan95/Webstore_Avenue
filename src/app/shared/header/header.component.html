@@ -1,0 +1,26 @@
+<nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+
+  <a class="navbar-brand" routerLink="/home">WebStore Avenue</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <span class="navbar-toggler-icon"></span>
+
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" routerLinkActive="active-link"
+    [routerLinkActiveOptions]="{exact: true}">
+
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item" *ngFor="let navItem of navigation_items">
+
+        <a class="nav-link" routerLink="/{{navItem.code}}">{{navItem.label}}</a>
+
+      </li>
+
+    </ul>
+
+  </div>
+</nav>

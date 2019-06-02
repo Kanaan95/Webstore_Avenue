@@ -1,0 +1,41 @@
+<div class="row justify-content-center">
+  <div class="title">
+    <h1>{{title}}</h1>
+  </div>
+</div>
+<div class="row justify-content-center">
+
+  <form [formGroup]="signupForm">
+
+    <div class="form-group" *ngFor="let fc of formComponents">
+
+      <label for="fc.code">{{fc.label}}</label>
+
+      <input *ngIf="fc.type == 'input'" type="text" class="form-control" id="{{fc.code}}" [(ngModel)]="user[fc.code]"
+        placeholder="{{fc.label}}" formControlName="{{fc.code}}" autocomplete="off" required>
+
+      <select *ngIf="fc.type == 'select'" class="form-control" id="{{fc.code}}" [(ngModel)]="user[fc.code]"
+        formControlName="{{fc.code}}" required>
+        <option></option>
+        <option *ngFor="let opt of fc.options" [ngValue]="opt.code">
+          {{opt.label}}
+        </option>
+      </select>
+
+      <div *ngIf="signupForm.get(fc.code).invalid && signupForm.get(fc.code).touched" class="alert alert-danger">
+
+        <div *ngIf="signupForm.get(fc.code).errors.required">
+          {{fc.label}} is required.
+        </div>
+
+        <div *ngIf="fc.code == 'email' && signupForm.get(fc.code).value !== '' && signupForm.get(fc.code).invalid">
+          Enter a valid email
+        </div>
+
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" value="Submit" (click)="onClick()">Submit</button>
+  </form>
+
+</div>

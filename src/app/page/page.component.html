@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <h1>{{page|uppercase}}</h1>
+  </div>
+
+  <div class="row justify-content-center">
+
+    <ng-container *ngIf="page != 'users'">
+      <div>
+        <app-item [ressources]="ressources"></app-item>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="page == 'users'">
+      <div class="col-lg-8">
+        <app-users [ressources]="ressources" (onDelete)="openConfirmModal($event)"></app-users>
+      </div>
+
+    </ng-container>
+
+  </div>
+</div>
